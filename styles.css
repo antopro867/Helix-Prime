@@ -173,7 +173,7 @@ li {
     margin-bottom: 12px;
 }
 
-/* BOTÓN */
+/* BOTÓN TARJETAS */
 .card button {
     background-color: #0369a1;
     color: white;
@@ -213,4 +213,21 @@ li {
     .imagen {
         width: 90%;
     }
+}
+
+/* BOTÓN VOLVER PRO (añadido) */
+.btn-volver {
+    display: inline-block;
+    background: linear-gradient(90deg, #0369a1, #0ea5e9);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
