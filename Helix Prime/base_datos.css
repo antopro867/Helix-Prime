@@ -1,0 +1,326 @@
+body{
+
+    margin:0;
+
+    font-family:Arial, sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #9aa1a8 0%,
+        #7e858c 100%
+    );
+
+    min-height:100vh;
+
+}
+
+/* CABECERA */
+
+.header{
+
+    background:
+    linear-gradient(
+        180deg,
+        #1e2327,
+        #343a40
+    );
+
+    color:white;
+
+    border-bottom:4px solid #15191c;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,.35);
+
+}
+
+/* SALA */
+
+.archivo{
+
+    width:95%;
+
+    height:700px;
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:8px solid #4e545a;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #d7dbe0 0%,
+        #c6ccd2 50%,
+        #adb4bb 100%
+    );
+
+    box-shadow:
+    inset 0 0 80px rgba(0,0,0,.15);
+
+}
+
+/* TECHO */
+
+.archivo::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:70px;
+
+    background:
+
+    repeating-linear-gradient(
+        90deg,
+
+        #e7eaed 0px,
+        #e7eaed 180px,
+
+        #d0d5da 180px,
+        #d0d5da 220px
+    );
+
+    border-bottom:4px solid #8f959b;
+
+}
+
+/* SUELO */
+
+.archivo::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #70777e,
+        #5b6268
+    );
+
+    border-top:4px solid #4b5156;
+
+}
+
+/* ARCHIVADORES */
+
+.estanteria{
+
+    width:140px;
+
+    height:560px;
+
+    position:relative;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #666c72,
+        #93989d,
+        #666c72
+    );
+
+    border:3px solid #454a4f;
+
+    box-shadow:
+    10px 10px 25px rgba(0,0,0,.25);
+
+}
+
+/* CAJONES */
+
+.estanteria::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+        to bottom,
+
+        transparent 0px,
+        transparent 90px,
+
+        #4a5055 90px,
+        #4a5055 95px
+    );
+
+}
+
+/* PASILLOS */
+
+.pasillo{
+
+    width:150px;
+
+    height:560px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #d2d6da,
+        #f5f6f8,
+        #d2d6da
+    );
+
+    border:2px solid #8b8f94;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#1f1f1f;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.25s;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/* REFLEJO */
+
+.pasillo::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:25%;
+
+    width:15%;
+
+    height:100%;
+
+    background:
+
+    rgba(255,255,255,.18);
+
+}
+
+/* PLACA */
+
+.pasillo::after{
+
+    content:"ARCHIVO";
+
+    position:absolute;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100px;
+
+    padding:8px;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #50555b,
+        #2f3438
+    );
+
+    color:white;
+
+    font-size:11px;
+
+    border:1px solid #222;
+
+    letter-spacing:2px;
+
+}
+
+/* HOVER */
+
+.pasillo:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 18px 30px rgba(0,0,0,.3);
+
+}
+
+/* NUMEROS GIGANTES */
+
+.numero-pasillo{
+
+    position:absolute;
+
+    top:120px;
+
+    font-size:180px;
+
+    font-weight:bold;
+
+    color:rgba(255,255,255,.08);
+
+    pointer-events:none;
+
+}
+
+/* TITULO */
+
+h2{
+
+    color:#2b3035;
+
+    font-size:26px;
+
+    letter-spacing:2px;
+
+}

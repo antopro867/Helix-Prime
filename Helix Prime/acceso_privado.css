@@ -1,0 +1,130 @@
+#loginForm{
+
+    max-width:600px;
+    margin-top:30px;
+
+}
+
+#loginForm label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#d6b676;
+
+    font-weight:bold;
+
+    font-size:1.05rem;
+
+}
+
+#loginForm select{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#111827;
+
+    color:white;
+
+    border:1px solid #4ade80;
+
+    border-radius:8px;
+
+    margin-bottom:25px;
+
+}
+
+.codigo-container{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.codigo-prefix{
+
+    background:#111827;
+
+    border:1px solid #4ade80;
+
+    border-right:none;
+
+    color:#4ade80;
+
+    font-weight:bold;
+
+    padding:12px 18px;
+
+    border-radius:8px 0 0 8px;
+
+}
+
+#workerCode{
+
+    flex:1;
+
+    padding:12px;
+
+    background:#111827;
+
+    color:white;
+
+    border:1px solid #4ade80;
+
+    border-radius:0 8px 8px 0;
+
+    box-sizing:border-box;
+
+}
+
+#workerCode:focus,
+#loginForm select:focus{
+
+    outline:none;
+
+    border-color:#86efac;
+
+    box-shadow:
+    0 0 12px rgba(74,222,128,.35);
+
+}
+
+#loginBtn{
+
+    background:#4ade80;
+
+    color:#111827;
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#loginBtn:hover{
+
+    background:#86efac;
+
+    transform:translateY(-2px);
+
+}
+
+.clasificacion{
+
+    margin-bottom:25px;
+
+}

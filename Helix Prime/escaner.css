@@ -1,0 +1,200 @@
+.zona{
+    width:100%;
+    height:500px;
+    position:relative;
+}
+
+.tarjeta{
+    width:240px;
+    height:140px;
+
+    position:absolute;
+
+    left:100px;
+    top:180px;
+
+    background:linear-gradient(
+        135deg,
+        #1e293b,
+        #0f172a
+    );
+
+    border:2px solid #4ade80;
+    border-radius:12px;
+
+    padding:20px;
+
+    cursor:grab;
+
+    user-select:none;
+
+    box-shadow:
+    0 0 20px rgba(74,222,128,.25);
+}
+
+.tarjeta h3{
+    margin-top:0;
+    color:white;
+}
+
+.lector{
+
+    width:420px;
+    height:170px;
+
+    position:absolute;
+
+    left:50%;
+    top:120px;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(
+        180deg,
+        #666,
+        #3a3a3a
+    );
+
+    border:4px solid #111;
+
+    border-radius:18px;
+
+    box-shadow:
+    inset 0 0 20px rgba(0,0,0,.8);
+}
+
+.pantalla{
+
+    width:80%;
+
+    margin:15px auto;
+
+    padding:10px;
+
+    background:#202020;
+
+    border:2px solid #888;
+
+    border-radius:6px;
+
+    text-align:center;
+
+    color:#8cff8c;
+
+    font-family:monospace;
+
+    font-size:18px;
+
+    letter-spacing:1px;
+}
+
+.ranura{
+
+    width:320px;
+    height:14px;
+
+    margin:35px auto;
+
+    background:black;
+
+    border-radius:20px;
+
+    box-shadow:
+    inset 0 0 10px rgba(255,255,255,.1);
+}
+
+.luces{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:10px;
+
+    padding-right:30px;
+}
+
+.luz{
+
+    width:16px;
+    height:16px;
+
+    border-radius:50%;
+}
+
+.roja{
+
+    background:#b91c1c;
+
+    box-shadow:0 0 10px #ef4444;
+}
+
+.verde{
+
+    background:#22c55e;
+
+    box-shadow:0 0 10px #22c55e;
+}
+
+#estado{
+
+    text-align:center;
+
+    margin-top:120px;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+}
+
+#accederBtn{
+
+    display:none;
+
+    margin:30px auto;
+
+    padding:15px 30px;
+
+    background:#4ade80;
+
+    color:#111827;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+#accederBtn:hover{
+
+    background:#86efac;
+
+}
+
+#volverBtn{
+
+    display:block;
+
+    width:fit-content;
+
+    margin:40px auto;
+
+    padding:12px 25px;
+
+    background:#374151;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+}

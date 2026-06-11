@@ -1,0 +1,513 @@
+/* arregla cosas raras del navegador */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* fondo general */
+/* color de la letra */
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background-color: #16181b;
+color: #ececec;
+line-height: 1.6;
+}
+
+/* para que nada se vaya a cuenca */
+.container {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+}
+
+/* logo principal */
+/* cambialo perezoso */
+.logo {
+height: 130px;
+width: auto;
+display: block;
+margin: 0 auto 15px auto;
+}
+
+/* cabecera */
+.header {
+background: linear-gradient(
+90deg,
+#22262b,
+#2c3a2f
+);
+border-bottom: 2px solid #527056;
+padding: 35px 0;
+text-align: center;
+}
+
+/* nombre del sitio */
+.header h1 {
+font-size: 2.7rem;
+letter-spacing: 3px;
+color: #d8c28a;
+}
+
+/* subtitulo */
+.header p {
+color: #bfc5cb;
+margin-top: 5px;
+}
+
+/* menu superior */
+.nav {
+background-color: #22262b;
+border-bottom: 1px solid #3b434b;
+}
+
+/* poner enlaces */
+.nav .container {
+display: flex;
+justify-content: center;
+gap: 35px;
+padding: 14px 0;
+}
+
+/* enlaces */
+.nav a {
+color: #ececec;
+text-decoration: none;
+font-weight: 500;
+position: relative;
+}
+
+/* linea de debajo */
+.nav a::after {
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+background: #7aa67d;
+left: 0;
+bottom: -5px;
+transition: 0.3s;
+}
+
+.nav a:hover::after {
+width: 100%;
+}
+
+/* resumen principal */
+.section {
+margin: 40px auto;
+padding: 25px;
+background-color: #22262b;
+border: 1px solid #3a4148;
+border-radius: 12px;
+}
+
+.section h2 {
+color: #d8c28a;
+margin-bottom: 15px;
+border-bottom: 1px solid #3a4148;
+padding-bottom: 10px;
+}
+
+/* texto normal */
+p {
+color: #d7d7d7;
+margin-bottom: 12px;
+}
+
+/* fotos grandes */
+.imagen {
+width: 80%;
+max-width: 850px;
+display: block;
+margin: 25px auto;
+border-radius: 12px;
+border: 1px solid #3a4148;
+transition: 0.3s;
+}
+
+.imagen:hover {
+transform: scale(1.01);
+}
+
+/* bloques de las plantas */
+.zona {
+padding: 45px 0;
+background-color: #1b1f24;
+}
+
+/* para que no todo sea del mismo color */
+.zona-alt {
+padding: 45px 0;
+background-color: #20252b;
+border-top: 1px solid #3a4148;
+border-bottom: 1px solid #3a4148;
+}
+
+/* nombre de cada planta */
+.zona h2 {
+color: #d8c28a;
+margin-bottom: 8px;
+}
+
+/* descripcion debajo del titulo */
+.zona-desc {
+color: #bfc5cb;
+margin-bottom: 25px;
+font-size: 0.95rem;
+}
+
+/* distribucion de tarjetas */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 35px;
+margin: 25px 0 50px;
+}
+
+/* salas */
+.card {
+background-color: #22262b;
+border: 1px solid #3a4148;
+border-radius: 12px;
+overflow: hidden;
+transition: 0.3s;
+}
+
+/* alternar un poco los colores */
+.card:nth-child(even) {
+background-color: #262b31;
+}
+
+/* efecto de levitar */
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(122,166,125,0.25);
+}
+
+/* imagen de cada sala */
+.card img {
+width: 100%;
+height: 190px;
+object-fit: cover;
+}
+
+/* contenido */
+.card-content {
+padding: 15px;
+}
+
+/* nombre de la sala */
+.card h3 {
+color: #d8c28a;
+margin-bottom: 8px;
+}
+
+/* descripcion */
+.card p {
+color: #d0d0d0;
+font-size: 0.9rem;
+}
+
+/* botones */
+/* funcionan asi que mejor no tocarlos */
+.card button,
+.btn-volver {
+background-color: #7aa67d;
+color: white;
+border: none;
+padding: 10px 14px;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.card button:hover,
+.btn-volver:hover {
+background-color: #527056;
+}
+
+/* boton volver */
+.btn-volver {
+display: inline-block;
+text-decoration: none;
+}
+
+/* pie de pagina */
+/* simple pero suficiente */
+.footer {
+margin-top: 40px;
+background-color: #22262b;
+border-top: 1px solid #3a4148;
+text-align: center;
+padding: 20px;
+}
+
+.footer p {
+color: #9da4ab;
+margin: 4px 0;
+}
+
+/* moviles */
+/* algun dia lo mejorare */
+@media (max-width: 768px) {
+
+.nav .container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.logo {
+    height: 90px;
+}
+
+.imagen {
+    width: 95%;
+}
+
+}
+
+/* PROTOCOLOS */
+
+/* subtítulos dentro de protocolos */
+.section h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #e9c98a;
+    border-left: 4px solid #4ade80;
+    padding-left: 10px;
+}
+
+/* listas */
+.section ul {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.section li {
+    margin-bottom: 10px;
+    color: #d1d5db;
+}
+
+/* clasificación */
+.clasificacion {
+    background-color: rgba(74, 222, 128, 0.08);
+    border: 1px solid #4ade80;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* contenedor botón volver */
+.volver-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* imagen protocolos */
+.section .imagen {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* efecto para documentos */
+.section {
+    position: relative;
+}
+
+.section:hover {
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.15);
+}
+
+.protocolo-logo {
+    width: 300px;
+    max-width: 80%;
+    display: block;
+    margin: 30px auto;
+}
+
+/* BASE DE DATOS BIOLOGICA - REGISTROS   */
+
+.registro-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.registro-card {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.registro-card:hover {
+    box-shadow: 0 0 25px rgba(74, 222, 128, 0.15);
+}
+
+.registro-info {
+    flex: 1;
+}
+
+.registro-info h2 {
+    color: #4ade80;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.registro-info p {
+    margin-bottom: 12px;
+}
+
+.registro-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.registro-imagen img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+.registro-flecha {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #4ade80;
+    color: #022c22;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.registro-flecha:hover {
+    transform: scale(1.1);
+    background: #22c55e;
+}
+
+.random-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.random-section .btn-volver {
+    font-size: 1rem;
+    padding: 14px 24px;
+}
+
+/* Clasificaciones */
+
+.nivel-1 {
+    color: #4ade80;
+}
+
+.nivel-2 {
+    color: #84cc16;
+}
+
+.nivel-3 {
+    color: #facc15;
+}
+
+.nivel-4 {
+    color: #ef4444;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .registro-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .registro-viewer {
+        gap: 10px;
+    }
+
+    .registro-flecha {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .registro-imagen img {
+        height: auto;
+    }
+}
+
+/* FORMULARIO DE CONTACTO */
+
+#contactForm {
+    margin-top: 25px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d6b676;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #1f2937;
+    border: 1px solid #4ade80;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #86efac;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#submitBtn {
+    background: #4ade80;
+    color: #111827;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background: #86efac;
+    transform: translateY(-2px);
+}
+

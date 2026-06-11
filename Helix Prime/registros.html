@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros | Helix Prime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Helix Prime</h1>
+        <p>Base de Datos Biológica</p>
+    </div>
+</header>
+
+<nav class="nav">
+    <div class="container">
+        <a href="index.html">Inicio</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="protocolos.html">Protocolos</a>
+        <a href="registros.html">Registros</a>
+        <a href="contacto.html">contacto</a>
+        <a href="acceso privado.html">acceso privado</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <section class="section">
+
+        <h2>Registros Biológicos</h2>
+
+        <p>
+            Los registros biológicos de Helix Prime contienen información
+            detallada sobre todos los organismos documentados por la instalación.
+        </p>
+
+        <p>
+            Cada expediente incluye datos sobre clasificación, nivel de
+            peligrosidad, ubicación actual y estado operativo de la entidad.
+        </p>
+
+        <p>
+            Parte de la información contenida en esta base de datos puede estar
+            restringida según el nivel de autorización del personal.
+        </p>
+
+    </section>
+
+    <section class="registro-viewer">
+
+        <button class="registro-flecha" id="prevBtn">
+            ❮
+        </button>
+
+        <div class="registro-card">
+
+            <div class="registro-info">
+
+                <h2 id="registroNombre">
+                    DES-001 - Abyss
+                </h2>
+
+                <p>
+                    <strong>Estado:</strong>
+                    <span id="registroEstado">
+                        Criocontenimiento Permanente
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Clasificación:</strong>
+                    <span id="registroClasificacion">
+                        Nivel IV
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Peligrosidad:</strong>
+                    <span id="registroPeligro">
+                        Extrema
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Prioridad de Vigilancia:</strong>
+                    <span id="registroPrioridad">
+                        Máxima
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Ubicación:</strong>
+                    <span id="registroUbicacion">
+                        Hipercongelador
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Origen:</strong>
+                    <span id="registroOrigen">
+                        Desconocido
+                    </span>
+                </p>
+
+                <a id="registroLink"
+                   href="registros/abyss.html"
+                   class="btn-volver">
+                    Ver expediente completo
+                </a>
+
+            </div>
+
+            <div class="registro-imagen">
+
+                <img
+                    id="registroImagen"
+                    src="img/abyss.jpg"
+                    alt="Registro biológico">
+
+            </div>
+
+        </div>
+
+        <button class="registro-flecha" id="nextBtn">
+            ❯
+        </button>
+
+    </section>
+
+    <section class="random-section">
+
+        <button id="randomBtn" class="btn-volver">
+            Descubrir un registro aleatorio
+        </button>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Helix Prime Research Facility</p>
+        <p>Base de Datos Biológica Oficial</p>
+    </div>
+</footer>
+
+<script src="registros.js"></script>
+
+</body>
+</html>

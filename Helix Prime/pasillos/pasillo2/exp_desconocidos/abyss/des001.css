@@ -1,0 +1,341 @@
+body{
+
+    margin:0;
+
+    font-family:Arial,sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #7d8791,
+        #5f6973
+    );
+
+    min-height:100vh;
+
+}
+
+/* CABECERA */
+
+header{
+
+    background:
+    linear-gradient(
+        180deg,
+        #22272c,
+        #3c434a
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-bottom:4px solid #171a1d;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.3);
+
+}
+
+h1{
+
+    margin:0;
+
+    font-size:42px;
+
+    letter-spacing:5px;
+
+}
+
+h2{
+
+    margin-top:10px;
+
+    letter-spacing:8px;
+
+    color:#d8dde2;
+
+}
+
+/* PANEL DE DATOS */
+
+.datos{
+
+    width:900px;
+
+    margin:30px auto;
+
+    padding:20px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #d9dde1,
+        #b8c0c8
+    );
+
+    border:3px solid #5a6470;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.25);
+
+    font-weight:bold;
+
+}
+
+/* CAJÓN */
+
+.carpetas{
+
+    width:950px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        180deg,
+        #6e7d8c,
+        #566472
+    );
+
+    border:4px solid #36424f;
+
+    border-bottom:22px solid #26313c;
+
+    box-shadow:
+
+    0 20px 35px rgba(0,0,0,.4),
+
+    inset 0 5px 10px rgba(255,255,255,.15);
+
+}
+
+/* INTERIOR DEL CAJÓN */
+
+.carpetas::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    right:15px;
+
+    bottom:15px;
+
+    border:2px solid rgba(255,255,255,.08);
+
+}
+
+/* FRONTAL DEL CAJÓN */
+
+.carpetas::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-4px;
+
+    bottom:-26px;
+
+    width:100%;
+
+    height:26px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #485562,
+        #2a333d
+    );
+
+    border:4px solid #36424f;
+
+    border-top:none;
+
+}
+
+/* CARPETAS */
+
+.carpeta{
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:35px;
+
+    margin-bottom:-20px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#222;
+
+    background:
+    linear-gradient(
+        180deg,
+        #f0e7cf,
+        #d8ccb0
+    );
+
+    border:2px solid #8b7d5d;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,.2);
+
+    transition:
+    .25s;
+
+}
+
+/* PESTAÑA SUPERIOR */
+
+.carpeta::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-12px;
+
+    left:40px;
+
+    width:140px;
+
+    height:24px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #f0e7cf,
+        #d8ccb0
+    );
+
+    border:2px solid #8b7d5d;
+
+    border-bottom:none;
+
+}
+
+/* SOMBRA ENTRE CARPETAS */
+
+.carpeta::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:8px;
+
+    background:
+    rgba(0,0,0,.08);
+
+}
+
+/* EFECTO AL PASAR EL RATÓN */
+
+.carpeta:hover{
+
+    transform:
+
+    translateY(-22px)
+
+    scale(1.02);
+
+    z-index:999;
+
+    box-shadow:
+
+    0 15px 25px rgba(0,0,0,.35);
+
+}
+
+/* EFECTO AL HACER CLICK */
+
+.carpeta:active{
+
+    transform:
+
+    translateY(-12px);
+
+}
+
+/* BOTÓN VOLVER */
+
+a{
+
+    display:block;
+
+    width:max-content;
+
+    margin:40px auto;
+
+    padding:12px 25px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        180deg,
+        #404850,
+        #293038
+    );
+
+    border:2px solid #181c20;
+
+    font-weight:bold;
+
+    transition:.2s;
+
+}
+
+a:hover{
+
+    transform:
+    scale(1.05);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .datos{
+
+        width:90%;
+
+    }
+
+    .carpetas{
+
+        width:90%;
+
+    }
+
+}
