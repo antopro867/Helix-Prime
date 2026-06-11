@@ -331,3 +331,183 @@ margin: 4px 0;
     display: block;
     margin: 30px auto;
 }
+
+/* BASE DE DATOS BIOLOGICA - REGISTROS   */
+
+.registro-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.registro-card {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.registro-card:hover {
+    box-shadow: 0 0 25px rgba(74, 222, 128, 0.15);
+}
+
+.registro-info {
+    flex: 1;
+}
+
+.registro-info h2 {
+    color: #4ade80;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.registro-info p {
+    margin-bottom: 12px;
+}
+
+.registro-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.registro-imagen img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+.registro-flecha {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #4ade80;
+    color: #022c22;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.registro-flecha:hover {
+    transform: scale(1.1);
+    background: #22c55e;
+}
+
+.random-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.random-section .btn-volver {
+    font-size: 1rem;
+    padding: 14px 24px;
+}
+
+/* Clasificaciones */
+
+.nivel-1 {
+    color: #4ade80;
+}
+
+.nivel-2 {
+    color: #84cc16;
+}
+
+.nivel-3 {
+    color: #facc15;
+}
+
+.nivel-4 {
+    color: #ef4444;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .registro-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .registro-viewer {
+        gap: 10px;
+    }
+
+    .registro-flecha {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .registro-imagen img {
+        height: auto;
+    }
+}
+
+/* FORMULARIO DE CONTACTO */
+
+#contactForm {
+    margin-top: 25px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d6b676;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #1f2937;
+    border: 1px solid #4ade80;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #86efac;
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#submitBtn {
+    background: #4ade80;
+    color: #111827;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background: #86efac;
+    transform: translateY(-2px);
+}
+

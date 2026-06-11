@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Privado | Helix Prime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="acceso_privado.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Helix Prime</h1>
+        <p>Sistema de Acceso Interno</p>
+    </div>
+</header>
+
+<nav class="nav">
+    <div class="container">
+        <a href="index.html">Inicio</a>
+        <a href="instalaciones.html">Instalaciones</a>
+        <a href="protocolos.html">Protocolos</a>
+        <a href="registros.html">Registros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="acceso_privado.html">Acceso Privado</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <section class="section">
+
+        <h2>Acceso a Base de Datos</h2>
+
+        <div class="clasificacion">
+
+            <strong>ADVERTENCIA</strong><br><br>
+
+            El acceso a información clasificada está restringido
+            al personal autorizado con nivel BETA-3 o superior.
+
+            <br><br>
+
+            Todas las consultas realizadas en este sistema son
+            registradas automáticamente.
+
+        </div>
+
+        <br>
+
+        <form id="loginForm">
+
+            <label for="rango">
+    Nivel de Acceso
+</label>
+
+<select id="rango" required>
+
+    <option value="">
+        Seleccionar nivel
+    </option>
+
+    <option value="BETA-3">BETA-3</option>
+
+    <option value="GAMMA-1">GAMMA-1</option>
+    <option value="GAMMA-2">GAMMA-2</option>
+    <option value="GAMMA-3">GAMMA-3</option>
+
+    <option value="OMEGA-1">OMEGA-1</option>
+    <option value="OMEGA-2">OMEGA-2</option>
+    <option value="OMEGA-3">OMEGA-3</option>
+    <option value="OMEGA-4">OMEGA-4</option>
+    <option value="OMEGA-5">OMEGA-5</option>
+
+</select>
+
+<label for="workerCode">
+    Código de Trabajador
+</label>
+
+<div class="codigo-container">
+
+    <span class="codigo-prefix">
+        HP-
+    </span>
+
+    <input
+        type="text"
+        id="workerCode"
+        placeholder="Introduzca su código"
+        required>
+
+</div>
+
+<button
+    type="submit"
+    id="loginBtn">
+
+    Iniciar Sesión
+
+</button>
+
+
+  </form>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Helix Prime Research Facility</p>
+    </div>
+</footer>
+
+<script src="acceso_privado.js"></script>
+
+</body>
+</html>
