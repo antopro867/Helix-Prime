@@ -324,3 +324,10 @@ h2{
     letter-spacing:2px;
 
 }
+
+.btn-back {
+display: inline-block;
+text-decoration: none;
+position: absolute;
+justify-content: center;
+}
