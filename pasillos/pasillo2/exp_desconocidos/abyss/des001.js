@@ -57,7 +57,7 @@ document
 .addEventListener("click", () => {
 
     window.location.href =
-    "carpetas/origen.html";
+    "carpetas/Origen.html";
 
 });
 

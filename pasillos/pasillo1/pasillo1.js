@@ -1,9 +1,5 @@
 const documentos = [
 
-    "doc001",
-    "doc002",
-    "doc003",
-
     "reg001",
     "reg002",
     "reg003",
@@ -31,5 +27,32 @@ documentos.forEach(id => {
             id + ".html";
 
     });
+
+});
+
+document
+.getElementById("doc001")
+.addEventListener("click", () => {
+
+    window.location.href =
+    "expedientes/DOC/doc001/doc001.html";
+
+});
+
+document
+.getElementById("doc002")
+.addEventListener("click", () => {
+
+    window.location.href =
+    "expedientes/DOC/doc002/doc002.html";
+
+});
+
+document
+.getElementById("doc003")
+.addEventListener("click", () => {
+
+    window.location.href =
+    "expedientes/DOC/doc003/doc003.html";
 
 });

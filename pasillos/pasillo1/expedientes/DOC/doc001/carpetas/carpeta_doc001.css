@@ -1,0 +1,251 @@
+body{
+
+    margin:0;
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+    background:#d7dbe0;
+
+}
+
+/* CABECERA */
+
+header{
+
+    background:#1d2329;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-bottom:6px solid #8b0000;
+
+}
+
+header h1{
+
+    margin:0;
+
+    font-size:40px;
+
+    letter-spacing:4px;
+
+}
+
+header h2{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    letter-spacing:6px;
+
+    color:#c7cdd3;
+
+}
+
+/* DOCUMENTO */
+
+.documento{
+
+    width:1000px;
+
+    margin:50px auto;
+
+    background:white;
+
+    border:1px solid #aaa;
+
+    box-shadow:
+
+    0 0 0 1px #ccc,
+
+    0 10px 25px rgba(0,0,0,.15);
+
+    padding:60px;
+
+    position:relative;
+
+}
+
+/* CABECERA DEL DOCUMENTO */
+
+.documento::before{
+
+    content:"HELIX PRIME - DOCUMENTO OFICIAL";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    right:0;
+
+    height:40px;
+
+    background:#2b3138;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:20px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+/* MARCA DE AGUA */
+
+.documento::after{
+
+    content:"HELIX PRIME";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(-30deg);
+
+    font-size:110px;
+
+    font-weight:bold;
+
+    color:rgba(0,0,0,.04);
+
+    pointer-events:none;
+
+}
+
+/* BLOQUE DE INFORMACIÓN */
+
+.info-doc{
+
+    margin-top:20px;
+
+    margin-bottom:40px;
+
+    padding:20px;
+
+    background:#f3f5f7;
+
+    border-left:6px solid #8b0000;
+
+    font-family:monospace;
+
+    line-height:1.8;
+
+}
+
+/* TITULOS */
+
+h3{
+
+    color:#111;
+
+    border-bottom:2px solid #999;
+
+    padding-bottom:8px;
+
+    margin-top:40px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+/* TEXTO */
+
+p{
+
+    color:#222;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    font-size:17px;
+
+}
+
+/* SEPARADOR */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #ccc;
+
+    margin:25px 0;
+
+}
+
+/* NUMERACIÓN */
+
+.documento{
+
+    counter-reset:pagina;
+
+}
+
+/* BOTÓN */
+
+a{
+
+    display:block;
+
+    width:max-content;
+
+    margin:40px auto;
+
+    padding:14px 25px;
+
+    background:#1d2329;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border:2px solid #111;
+
+    transition:.2s;
+
+}
+
+a:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .documento{
+
+        width:85%;
+
+        padding:35px;
+
+    }
+
+}
